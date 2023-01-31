@@ -1,1 +1,314 @@
+<!------------------------------------------------------------
+Entrega Proyecto Final Nº [1] - CV
+Version 1.0
 
+Argentina Programa 4.0
+--Programación
+---Primeros pasos del desarrollo Front End
+
+Docente: Daniel R.
+
+Cantidad de documentos: 3 (index.html; styles.css; script.js)
+Software utilizado: Mozilla Firefox, Sublime Text
+
+Fecha de inicio: 01/01/2023
+-------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Elías Hann - CV</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/thumbs/160/samsung/100/personal-computer_1f4bb.png">
+
+		<!-- Meta OG -->
+		<meta name="og:title" content="Elías Hann - CV">
+		<meta name="og:description" content="Currículum Vitae del Desarrollador Elías Hann">
+		<meta name="og:image" content="https://randomuser.me/api/portraits/men/36.jpg">
+		<meta name="og:url" content="https://github.com/dxv7/dxv7.github.io">
+		
+		<!-- Aos Animation -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<!-- Botón Scroll to Top -->
+		<img onclick="scrollFunction()" id="scroll-boton" class="arrow" title="Volver al inicio" src="https://cdn-icons-png.flaticon.com/512/7763/7763694.png" alt="Flecha que lleva hacia arriba">
+	</head>
+
+	<body>
+		<div data-aos="zoom-out" class="container">
+			<div class="box">
+
+				<!-- H E A D E R ----------------------------------------------->
+				<header>
+					<div class="avatar-center">
+						<img id="avatar" src="https://randomuser.me/api/portraits/men/36.jpg" alt="Foto de perfil de Elías Hann">
+					</div>
+
+					<h1 id="titulo">
+						<strong>Elías Hann</strong>
+						<br>
+						CV
+					</h1>
+				</header>
+
+				<!-- N A V ----------------------------------------------------->
+
+				<nav>
+					<div class="barra-navegacion" id="barra-navegacion">
+						<!-- Anclas -->
+						<a href="#informacion-personal" class="anclas">Sobre mí</a>
+						<a href="#experiencia" class="anclas">Experiencia</a>
+						<a href="#formacion" class="anclas">Formación</a>
+						<a href="#habilidades" class="anclas">Habilidades</a>
+						<a href="#contacto" class="anclas" id="anclaContacto">Contacto</a>
+					</div>
+
+					<!-- Iconos -->
+					<div class="barra-navegacion--icons">
+						<a onclick="window.print()">
+							<img class="icons" src="https://cdn-icons-png.flaticon.com/512/3449/3449657.png" alt="Imprimir" title="Imprimir CV">
+						</a>
+						
+						<a href="mailto:elias777@dev.com">
+							<img src="https://cdn-icons-png.flaticon.com/512/726/726623.png" alt="Contactar" class="icons" title="Enviar correo electrónico"></a>
+
+						<a onclick="location.reload()">
+							<img src="https://cdn-icons-png.flaticon.com/512/2267/2267901.png" alt="Recargar página" class="icons" title="Recargar página">
+						</a>
+						
+						<img src="https://cdn-icons-png.flaticon.com/512/4059/4059880.png" alt="Cambiar tema" class="icons" id="theme-toggle" title="Cambiar tema">
+					
+						<a href="#reconocimientos" id="anclaReconocimientos">
+							<img src="https://em-content.zobj.net/thumbs/160/samsung/100/left-pointing-magnifying-glass_1f50d.png" alt="Referencias" class="icons" title="Mostrar Reconocimientos">
+						</a>
+					</div>
+				</nav>
+
+				<!-- S E C T I O N --------------------------------------------->
+				
+				<section>
+					<div class="informacion-personal" id="informacion-personal" data-aos="fade-right">
+						<table id="info">
+							<h2 id="categorias">Información Personal</h2>
+							
+							<tr>
+								<td>Nombre:</td>
+								<td>Elías Hann</td>
+							</tr>
+
+							<tr>
+								<td>Género</td>
+								<td>Masculino</td>
+							</tr>
+
+							<tr>
+								<td>Nacionalidad:</td>
+								<td>Argentino</td>
+							</tr>
+
+							<tr>
+								<td>Fecha de Nacimiento:</td>
+								<td>25/10/1992</td>
+							</tr>
+
+							<tr>
+								<td>Estado Civil</td>
+								<td>Soltero</td>
+							</tr>
+
+							<tr>
+								<td>DNI:</td>
+								<td>37.287.147</td>
+							</tr>
+
+							<tr>
+								<td>Documentos:</td>
+								<td>Registro de conducir, Pasaporte</td>
+							</tr>
+
+							<tr>
+								<td>E-mail:</td>
+								<td>elias777@dev.com</td>
+							</tr>
+
+							<tr>
+								<td>Teléfono:</td>
+								<td>9142-0028</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="experiencia" id="experiencia" data-aos="fade-left">
+						<h2 id="categorias">Experiencia</h2>
+						<div class="trabajo">
+							<h3>Senior Full Stack Web Developer</h3>
+							<span><strong>Microsoft Corporation</strong></span><br>
+							<span>2019 - Presente</span>
+							<ul>
+								<li>Trabajando en equipo con otros desarrolladores y diseñadores UX.</li>
+								<li>Contribuí al desarrollo de 7 aplicaciones web y móviles.</li>
+								<li>Reduje el tiempo de procesamiento diario de datos en un 77% al implementar procedimientos almacenados en el portal web utilizado a nivel nacional.</li>
+								<li>Implementé encuestas a clientes, incrementando la satisfacción del usuario un 54%.</li>
+							</ul>
+						</div>
+
+						<div class="trabajo">
+							<h3>Junior Web Developer</h3>
+							<span><strong>Valve Corporation</strong></span><br>
+							<span>2014 - 2019</span>
+							<ul>
+								<li>Creé interfaces de usuario accesibles, responsivas y funcionales para brindar una buena experiencia al usuario en cualquier dispositivo.</li>
+								<li>Realicé pruebas multiplataforma en 4 navegadores web y 3 aplicaciones independientes en la web y la nube.</li>
+								<li>Dí soporte al sitio web y al cliente de escritorio.</li>
+								<li>Optimicé código HTML, CSS y JS.</li>
+							</ul>
+						</div>
+
+						<div class="trabajo">
+							<h3>Freelance</h3>
+							<span>2007 - 2013</span>
+							<ul>
+								<li>Comisiones y proyectos colaborativos.</li>
+								<li>Diseño de Conceptos para Windows.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="formacion" id="formacion" data-aos="fade-right">
+						<h2 id="categorias">Formación</h2>
+						<ul>
+							<li>Tecnicatura Universitaria en Desarrollo Web Full Stack</li>
+							<li>Diplomatura en Desarrollo Web</li>
+							<li>Certificado 3 en Web Tech</li>
+						</ul>
+
+						<h2>Capacitaciones</h2>
+						<ul>
+							<li>Argentina Programa</li>
+							<li>JavaScript</li>
+							<li>React JS</li>
+							<li>Python</li>
+						</ul>
+					</div>
+
+					<div class="habilidades" id="habilidades" data-aos="fade-left">
+						<h2 id="categorias">Habilidades</h2>
+						<ul>
+							<li>Trabajo en equipo.</li>
+							<li>Diseño de páginas Web</li>
+							<li>Programación de Scripts</li>
+							<li>HTML5</li>
+							<li>SCSS</li>
+							<li>SQL</li>
+							<li>JSON</li>
+							<li>React.js</li>
+							<li>Node.js</li>
+						</ul>
+
+						<h2>Lenguajes</h2>
+						<ul>
+							<li>C</li>
+							<li>C#</li>
+							<li>JavaScript</li>
+							<li>PHP</li>
+							<li>Python</li>
+						</ul>
+
+						<h2>Idiomas</h2>
+						<ul>
+							<li>Español</li>
+							<li>Inglés</li>
+							<li>Hebreo</li>
+						</ul>				
+					</div>
+				</section>
+
+				<!-- F O O T E R ----------------------------------------------->
+
+				<footer>
+					<div class="contacto" id="contacto" data-aos="fade-up">
+						<h2 id="categorias">Contacto</h2>
+						<p>¡Hola! Puedes contactarme a través de mi correo electrónico <a class="link" href="mailto:elias777@dev.com">elias777@dev.com</a>, o completando el formulario de contacto que aparece a continuación.</p>
+
+						<div class="formulario" id="formulario">
+							<form name="formulario" action="formulario.php" method="POST" accept-charset="utf-8">
+								<table>
+									<h3>Formulario de Contacto</h3>
+									<br>
+									<tr>
+										<td>
+											<label for="nombre">*Nombre:</label><br>
+											<input type="text" id="form-inputs" name="nombre" placeholder="Ingrese su nombre y apellido" required>
+										</td>
+									</tr>
+									
+									<tr>
+										<td>
+											<label for="email">*E-mail:</label><br>
+											<input type="email" id="form-inputs" name="email" placeholder="Ingrese su correo electrónico" required>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<label for="mensaje">*Mensaje:</label><br>
+											<textarea name="textarea" id="form-inputs"  rows="4" cols="1" style="width: 302.22px"></textarea>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<!-- Habilitar este input cuando el servidor que hostea el formulario.php esté activo.
+											<input type="submit" id="enviar" value="Enviar" title="Enviar mensaje" alt="Enviar mensaje">
+											-->
+											<br>
+											<input type="button" id="enviar-mensaje" value="Enviar" title="Enviar mensaje" alt="Enviar mensaje.">
+											<input type="reset" id="borrar-mensaje" value="Eliminar Datos" title="Eliminar los datos ingresados." alt="Eliminar los datos ingresados.">
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+
+					<div class="reconocimientos" id="reconocimientos" data-aos="fade-up">
+						<h2 id="categorias">Reconocimientos</h2>
+						<p>Documentos, páginas y librerías que utilicé para crear esta página.</p>
+						<ul>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://www.w3schools.com/html/default.asp">w3schools:html</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://www.w3schools.com/css/default.asp">w3schools:css</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://www.w3schools.com/js/default.asp">w3schools:js</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://michalsnik.github.io/aos/">AOS: Animate On Scroll Library</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://emojipedia.org/samsung/experience-8.5/">Icons</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://flaticon.com">Flaticon</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://fonts.google.com/">Google Fonts</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://developer.mozilla.org/es/">mdn - Developer Mozilla</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://plainenglish.io/blog/build-a-dark-mode-toggle-with-javascript-and-localstorage">plainenglish.io localStorage</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://randomuser.me/">Randomuser.me</a></li>
+							<li><a id="reconocimientos--txt" target="_blank" href="https://stackoverflow.com/">StackOverflow</a></li>
+							<li>Material visto en el módulo de Primeros pasos del desarrollo Front End.</li>
+							<li>Enseñanzas de Daniel R.</li>
+						</ul>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!-- S C R I P T S ----------------------------------------------------->
+		<script src="script.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script> 
+			AOS.init({
+				offset: 120,
+				delay: 80,
+				duration: 1700,
+				once: true
+			});
+		</script>
+	</body>
+</html>

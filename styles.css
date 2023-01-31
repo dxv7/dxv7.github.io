@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+html {
+	scroll-behavior: smooth; /* Desplazamiento vertical suave para #anclas */
+}
+
+body {
+	background-color: #1b1b1b;
+	color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	image-rendering: -webkit-optimize-contrast; /* Mejora renderización de imagen en Chrome */
+	transition: all 0.3s linear;
+}
+
+.container {
+	height: 100%;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.box {
+	border: solid 0px #feb123;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 540px;
+	padding: 15px;
+}
+
+
+
+
+/* H E A D E R -------------------------------------------> */
+
+#titulo {
+	font-size: 26px;
+	letter-spacing: 2px;
+	margin: 10px 0 70px 0;
+	padding: 10px;
+	text-align: center;
+}
+
+
+/* Foto de perfil ---> */
+
+.avatar-center {
+	display: flex;
+ 	justify-content: center;
+ 	margin: 135px 0 20px 0;
+}
+
+.avatar-center img {
+	border: solid 2px #fff;
+	border-radius: 100px;
+	display: block;
+	height: 125px;
+	margin: auto;
+	transition: all 0.2s linear;
+	width: 125px;
+}
+
+.avatar-center img:hover {
+	border-radius: 0px;
+	rotate: 7deg;
+	transition: all 0.2s linear;
+	transform: scale(1.2);
+	-webkit-transform: rotate(7deg) scale(1.2);
+}
+
+
+
+
+/* N A V -----------------------------------------------------> */
+
+nav {
+	margin-bottom: 40px;
+	padding: 1rem 0;
+ 	text-align: center;
+}
+
+.barra-navegacion {
+	border-radius: 15px;
+	background-color: #2c2a2d;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15), 0px 8px 16px rgba(0, 0, 0, 0.15);
+	padding: 7px;
+	margin-bottom: 20px;
+}
+
+
+/* Anclas ---> */
+
+.anclas {
+	border: solid 2px transparent;
+	padding: 6px 7px 6px 7px;
+	transition: all 0.3s linear;	
+}
+
+.anclas:hover {
+	transition: all 0.3s linear;
+	border: solid 2px #ff5252;
+	border-top-left-radius: 5px 225px;
+	border-top-right-radius: 225px 5px;
+	border-bottom-right-radius: 5px 225px;
+	border-bottom-left-radius: 225px 5px;
+}
+
+a.anclas {
+	color: #fff;
+	text-decoration: none;
+}
+
+#theme-toggle {
+	transition: all 0.3s linear;
+}
+
+
+/* S E C T I O N ----------------------------------------------> */
+
+/* Categorías ---> */
+
+#categorias {
+	border-bottom: solid 1px #fff;
+}
+
+.informacion-personal,
+.experiencia,
+.habilidades,
+.formacion,
+.contacto,
+.reconocimientos {
+	background-color: #2c2a2d;
+	border-radius: 15px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15), 0px 8px 16px rgba(0, 0, 0, 0.15);
+	margin-bottom: 55px;
+	padding: 15px;
+	scroll-margin-top: 50px;
+}
+
+.trabajo {
+	margin: 0 10px 0 10px;
+	text-align: justify;
+}
+
+ul {
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding-left: 20px;
+	list-style-type: square;
+}
+
+.habilidades ul {
+	columns: 2;
+	-moz-columns: 2;
+	-webkit-columns: 2;
+}
+
+#contacto {
+	display: none;
+}
+
+.reconocimientos {
+	display: none;
+}
+
+#info {
+	width: 100%; /* Ancho de tabla para #informacion-personal */
+}
+
+
+
+
+/* F O O T E R ------------------------------------------------> */
+
+/* Formulario de contacto ---> */
+
+.formulario {
+	background-color: #1b1b1b;
+	border-radius: 15px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15), 0px 8px 16px rgba(0, 0, 0, 0.15);
+	padding: 15px;
+}
+
+.formulario h3 {
+	text-align: center;
+}
+
+form table {
+	margin: auto;
+	width: 300px;
+}
+
+#form-inputs {
+	background-color: #cb997e;
+	border-radius: 0px;
+	border: solid 2px #cb997e;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 5px 0px 10px 0px;
+	padding: 3px;
+	width: 294px;
+}
+
+#form-inputs:focus {
+	background-color: #ddbea9;
+	outline: none;
+}
+
+textarea {
+	box-sizing: border-box;
+	resize:	vertical;
+	width: 100%;
+}
+
+#enviar-mensaje,
+#borrar-mensaje {
+	border-radius: 0px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px 10px 5px 10px;
+	transition: all 0.3s linear;
+}
+
+#enviar-mensaje:hover {
+	box-shadow: 0px 0px 7px #cb997e;
+	transition: all 0.3s linear;
+}
+
+#borrar-mensaje:hover {
+	box-shadow: 0px 0px 7px #a92925;
+	transition: all 0.3s linear;
+}
+
+#enviar-mensaje {
+	background-color: #cb997e;
+}
+
+#borrar-mensaje {
+	background-color: #a92925;
+	margin-bottom: 20px;
+}
+
+
+
+
+/* A E S T H E T I C S -------------------------------------> */
+
+h1 {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 16px;
+	font-style: italic;
+	letter-spacing: 2px;
+	margin: 7px 0 7px 0;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #4cb5da;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+
+strong {
+	color: #ff5252;
+}
+
+.link {
+	color: #d483a0;
+	text-decoration: none;
+}
+
+img.icons {
+	cursor: pointer;
+	margin: 0px 5px 0px 5px;
+	transition: all 0.2s linear;
+	width: 5%;
+}
+
+img.icons:hover {
+	rotate: 7deg;
+	transition: all 0.2s linear;
+	transform: scale(1.3);
+	-webkit-transform: scale(1.3) rotate(7deg);
+}
+
+.nav-text--nightmode {
+	color: #000;
+}
+
+#reconocimientos--txt  {
+	color: #fff;
+	text-decoration: none;
+}
+
+#informacion-personal,
+#experiencia,
+#formacion,
+#habilidades,
+#contacto,
+#reconocimientos,
+#barra-navegacion,
+.barra-navegacion--icons,
+.formulario {
+	transition: all 0.3s linear;
+}
+
+::marker {
+	color: #ff5252;
+}
+
+
+/* Selección de texto ---> */
+
+::selection {
+	background: #ffb684;
+	color: #000;
+}
+
+::-moz-selection {
+	background: #ffb684;
+	color: #000;
+}
+
+
+/* Botón Scroll to Top ---> */
+
+#scroll-boton {
+	background-color: transparent;
+	border: none; 
+	border-radius: 10px;
+	bottom: 20px; 
+	right: 30px; 
+	color: white; 
+	cursor: pointer;
+	display: none; 
+	height: 35px;
+	width: 35px;
+	outline: none; 
+	padding: 5px; 
+	position: fixed;
+	transition: all 0.2s linear;
+	z-index: 99; 
+}
+
+#scroll-boton:hover {
+	background-color: rgba(255,255,255,0.1);
+	transition: all 0.2s linear;
+}
+
+
+
+
+/* M E D I A  Q U E R I E S ---------------------------------> */
+
+/* SmartPhone ---> */
+
+@media screen and (max-width: 767px) {
+
+	body {
+		left: -15px; /* Necesario para centrar el contenido, debido al overflow-x y un problema con AOS.css*/
+		margin: auto;
+		overflow-x: hidden;
+		width: 350px;
+	}
+
+	.container {
+		width: 300px;
+	}
+
+	.box {
+		width: 100%;
+	}
+
+	nav img.icons {
+		width: 10%;
+	}
+
+	.barra-navegacion {
+		display: none;
+	}
+
+	form table {
+		width: 120px;
+	}
+
+	#form-inputs {
+		width: 224px;
+	}
+
+	textarea {
+		width: 233px !important;
+	}
+
+	#scroll-boton {
+		width: 35px;
+		height: 35px;
+		right: 30px;
+	}
+
+	#contacto,
+	#reconocimientos {
+		display: block;
+	}
+}
+
+
+/* Tablets ---> */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+	body {
+		margin: auto;
+		overflow-x: hidden;
+	}
+
+	.container {
+		width: 440px;
+	}
+
+	.box {
+		width: 100%;
+	}
+
+	nav img.icons {
+		width: 6%;
+	}
+
+	#scroll-boton {
+		width: 35px;
+		height: 35px;
+		right: 30px;
+	}
+
+	.anclas {
+		border: solid 1px transparent;
+		padding: 6px 5px 6px 5px;
+		transition: all 0.3s linear;	
+	}
+}
